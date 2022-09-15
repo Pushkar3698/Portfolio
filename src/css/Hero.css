@@ -1,0 +1,183 @@
+.loader-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+  z-index: 100;
+}
+.main-header {
+  height: 80vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about-section {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  overflow: hidden;
+
+  align-items: center;
+}
+.about-section .about-text {
+  display: flex;
+
+  width: 100%;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.about-desc {
+  width: 600px;
+  font-size: 22px;
+  margin-left: 200px;
+}
+.about-me {
+  font-size: 100px;
+  font-weight: 700;
+  color: lightblue;
+  opacity: 0.2;
+  position: absolute;
+}
+.projects-container {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  color: black;
+}
+.projects-left-content {
+  width: 40%;
+  height: 100%;
+
+  position: sticky;
+  top: 0;
+}
+.projects-right-image {
+  width: 60%;
+  overflow-x: hidden;
+}
+.project-image-container {
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.projects-content {
+  width: 100%;
+  height: 585px;
+}
+.projects-content {
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 25px 60px;
+}
+.project-no {
+  font-size: 60px;
+}
+.project-text {
+  line-height: 50px;
+}
+.heading {
+  font-size: 50px;
+  margin-top: 10px;
+}
+.project-description {
+  width: 85%;
+  height: 130px;
+  font-size: 16px;
+  margin: 30px 0;
+
+  line-height: 22px;
+}
+.project-link button {
+  padding: 10px 25px;
+  background: white;
+
+  border-radius: 20px;
+  border: 3px solid lightblue;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-link button:hover {
+  animation: whileHover infinite 0.4s ease-in-out;
+}
+
+@keyframes whileHover {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: -6px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.project-link a {
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+svg {
+  transform: scale(3);
+}
+
+.contact-me {
+  width: 100%;
+  height: 90vh;
+  margin: 100px 0;
+}
+.contact-heading {
+  padding: 0 60px;
+  color: lightblue;
+}
+
+.contact-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.contact-left {
+  width: 50%;
+  border: 2px solid black;
+  padding: 40px 80px;
+}
+.contact-left p {
+  margin: 20px 0;
+  font-weight: 600;
+}
+.contact-right {
+  width: 50%;
+}
+.contact-right {
+  padding: 60px 80px;
+}
+.links {
+  margin: 25px 0;
+}
+.links a {
+  margin: 0 5px;
+}
