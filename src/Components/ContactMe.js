@@ -1,7 +1,7 @@
 import { animate, motion } from "framer-motion";
 import React, { useEffect, useState, useRef } from "react";
 import resume from "../Resources/resume.pdf";
-import vector from "../Resources/vector.webp";
+import vector from "../Resources/coding.png";
 import linked from "../Resources/linked.png";
 import git from "../Resources/git.png";
 import you from "../Resources/you.png";
@@ -127,7 +127,7 @@ export const ContactMe = () => {
             <motion.img
               src={vector}
               alt=""
-              width={"500px"}
+              width={"400px"}
               initial={{ y: "20px", opacity: 0 }}
               animate={{ y: "0", opacity: 1 }}
               transition={{ duration: 1, ease: "easeInOut", delay: 0.2 }}
