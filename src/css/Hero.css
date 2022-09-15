@@ -171,6 +171,9 @@ svg {
 }
 .contact-right {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .contact-right {
   padding: 60px 80px;
