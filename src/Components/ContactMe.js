@@ -28,7 +28,6 @@ export const ContactMe = () => {
   const interRef = useRef();
   useEffect(() => {
     const observer = new IntersectionObserver((entry) => {
-      console.log(entry[0].isIntersecting);
       if (entry[0].isIntersecting) {
         setintersection(true);
       }

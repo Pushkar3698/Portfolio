@@ -71,12 +71,12 @@ export const Projects = () => {
         {
           image: one,
           width: "300px",
-          style: `translateY(-${(scroll / 10) * 2.5}px)`,
+          style: `translateY(-${(scroll / 10) * 1.5}px)`,
         },
         {
           image: two,
           width: "300px",
-          style: `translateY(-${(scroll / 10) * 1.2}px)`,
+          style: `translateY(-${(scroll / 10) * 0.2}px)`,
         },
       ],
       [
@@ -113,17 +113,17 @@ export const Projects = () => {
         {
           image: eight,
           width: "300px",
-          style: `translateY(-${(scroll / 10) * 2.5}px)`,
+          style: `translateY(-${(scroll / 10) * 2}px)`,
         },
         {
           image: nine,
           width: "200px",
-          style: `translateY(-${(scroll / 10) * 1.2}px)`,
+          style: `translateY(-${(scroll / 10) * 0.5}px)`,
         },
         {
           image: ten,
           width: "450px",
-          style: `translateY(-${(scroll / 10) * 2}px)`,
+          style: `translateY(-${(scroll / 10) * 1.5}px)`,
         },
       ],
     ];

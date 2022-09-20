@@ -88,11 +88,12 @@
   font-size: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   padding: 25px 60px;
 }
 .project-no {
-  font-size: 60px;
+  font-size: 80px;
 }
 .project-text {
   line-height: 50px;

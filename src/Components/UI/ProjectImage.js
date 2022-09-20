@@ -9,13 +9,19 @@ export const ProjectImage = ({
   const Containerref = useRef();
 
   useEffect(() => {
-    const Observer = new IntersectionObserver((entries) => {
-      const [entry] = entries;
+    const Observer = new IntersectionObserver(
+      (entries) => {
+        const [entry] = entries;
 
-      if (entry.isIntersecting) {
-        renderContent(id);
+        if (entry.isIntersecting) {
+          renderContent(id);
+        }
+      },
+      {
+        threshold: 0.5,
+        rootMargin: "20px",
       }
-    });
+    );
 
     if (Containerref.current) Observer.observe(Containerref.current);
 
