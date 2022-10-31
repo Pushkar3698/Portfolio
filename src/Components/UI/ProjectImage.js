@@ -39,6 +39,7 @@ export const ProjectImage = ({
             alt=""
             width={el.width}
             style={{ transform: el.style, margin: "-10px" }}
+            className="project-images"
           />
         );
       })}

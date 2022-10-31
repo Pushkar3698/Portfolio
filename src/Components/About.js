@@ -1,22 +1,41 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 export const About = () => {
   const [scroll, setscroll] = useState(-50);
+  const [intersection, setintersection] = useState(false);
+  const [width, setwidth] = useState(false);
+  const elem = useRef();
 
   const handelScroll = () => {
-    setscroll(window.scrollY * 0.5);
+    const scroll = width ? 0.1 : 0.4;
+    setscroll(window.scrollY * scroll);
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", handelScroll);
+    if (window.screen.availWidth <= 500) {
+      setwidth(true);
+    }
+
+    const intersectionObserver = new IntersectionObserver((entry) => {
+      if (entry[0].isIntersecting) {
+        setintersection(true);
+      } else {
+        setintersection(false);
+      }
+    });
+    intersectionObserver.observe(elem.current);
+
+    if (intersection) {
+      window.addEventListener("scroll", handelScroll);
+    }
 
     return () => {
       window.removeEventListener("scroll", handelScroll);
     };
-  }, [scroll]);
+  }, [scroll, intersection]);
 
   return (
-    <div className="about-section" style={{ overflow: "hidden" }}>
+    <div className="about-section" style={{ overflow: "hidden" }} ref={elem}>
       <div className="about-text">
         <div className="about-me" style={{ left: scroll }}>
           ABOUT ME

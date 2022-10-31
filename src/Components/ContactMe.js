@@ -26,18 +26,19 @@ const getVariants = (delay = 0) => {
 export const ContactMe = () => {
   const [intersection, setintersection] = useState(false);
   const interRef = useRef();
+
   useEffect(() => {
     const observer = new IntersectionObserver((entry) => {
       if (entry[0].isIntersecting) {
         setintersection(true);
       }
     });
+
     observer.observe(interRef.current);
 
-    return () => {
-      observer.unobserve(interRef.current);
-    };
+    return () => {};
   }, []);
+
   return (
     <div className="contact-me" ref={interRef}>
       <div className="contact-heading">

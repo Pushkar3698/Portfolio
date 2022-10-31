@@ -6,14 +6,16 @@ const variants = {
     opacity: 0,
     pathLength: 0,
     pathOffset: 0,
+    y: 15,
   },
   animate: {
     opacity: 1,
     pathLength: 1,
     pathOffset: 1,
+    y: 0,
     transition: {
       duration: 1,
-      delay: 0.5,
+      delay: 0.9,
       ease: "easeInOut",
     },
   },

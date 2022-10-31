@@ -6,7 +6,6 @@ export const ProjectsContent = ({ data }) => {
 
   const content = data[number];
 
-  // console.log(number);
   return (
     <div className="projects-content">
       <div className="project-no">

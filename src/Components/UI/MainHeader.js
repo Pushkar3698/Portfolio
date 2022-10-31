@@ -28,18 +28,12 @@ export const MainHeader = () => {
     <motion.div
       className="main-header"
       initial={{ height: "100vh" }}
-      animate={{ height: "80vh" }}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
+      animate={{ height: "85vh" }}
+      transition={{ duration: 0.9, ease: "easeInOut" }}
     >
       <div className="header-main-text">
-        {/* <motion.h1
-          variants={getAnimation(4.2)}
-          initial="initial"
-          animate="animate"
-        > */}
-        {/* <img src={logo} alt="" style={{ width: "500px" }} /> */}
         <NameSvg />
-        {/* </motion.h1> */}
+
         <motion.h2
           variants={getAnimation(1.3)}
           initial="initial"

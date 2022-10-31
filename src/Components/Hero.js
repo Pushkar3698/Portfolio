@@ -18,25 +18,19 @@ const Loader = () => {
 
 const Hero = () => {
   const [loading, setloading] = useState(true);
-  // const handelScroll = () => {
-  //   window.scrollTo(0, 0);
-  // };
+
   useEffect(() => {
-    // if (loading) {
-    //   window.addEventListener("scroll", handelScroll);
-    // }
     const timeout = setTimeout(() => {
       setloading(false);
-    }, 3500);
+    }, 1500);
 
     return () => {
       clearTimeout(timeout);
-      // window.removeEventListener("scroll", handelScroll);
     };
   }, [loading]);
 
   return (
-    <div>
+    <div className="hero-container">
       <AnimatePresence>{loading ? <Loader /> : <MainHeader />}</AnimatePresence>
     </div>
   );
