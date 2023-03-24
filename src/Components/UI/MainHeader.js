@@ -40,7 +40,7 @@ export const MainHeader = () => {
           animate="animate"
           style={{ fontWeight: 700, fontSize: "22px", color: "lightblue" }}
         >
-          {"< Front-end Developer />"}
+          {"< MERN Stack Developer />"}
         </motion.h2>
       </div>
     </motion.div>
