@@ -90,7 +90,7 @@ export const ContactMe = () => {
             </div>
           )}
           <div className="resume-btn">
-            <a href={latest} style={{ color: "lightblue" }}>
+            <a href={latest} download style={{ color: "lightblue" }}>
               Download Resume
             </a>
           </div>

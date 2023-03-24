@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 
 export const ProjectsContent = ({ data }) => {
   const number = useSelector((state) => state.reducer.scrollNo);
-
+  console.log(data);
   const content = data[number];
 
   return (
