@@ -27,6 +27,15 @@ export const ContactMe = () => {
   const [intersection, setintersection] = useState(false);
   const interRef = useRef();
 
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = latest;
+    link.download = "resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   useEffect(() => {
     const observer = new IntersectionObserver((entry) => {
       if (entry[0].isIntersecting) {
@@ -89,10 +98,17 @@ export const ContactMe = () => {
               </motion.p>
             </div>
           )}
-          <div className="resume-btn">
-            <a href={latest} download style={{ color: "lightblue" }}>
-              Download Resume
-            </a>
+          <div
+            className="resume-btn"
+            style={{
+              color: "lightblue",
+              cursor: "pointer",
+              width: "150px",
+              fontSize: "14px",
+            }}
+            onClick={handleDownload}
+          >
+            <p>Download Resume</p>
           </div>
 
           {intersection && (
