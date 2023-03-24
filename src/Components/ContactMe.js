@@ -1,6 +1,6 @@
 import { animate, motion } from "framer-motion";
 import React, { useEffect, useState, useRef } from "react";
-import resume from "../Resources/latest.pdf";
+import latest from "../Resources/latest.pdf";
 import vector from "../Resources/coding.png";
 import linked from "../Resources/linked.png";
 import git from "../Resources/git.png";
@@ -90,8 +90,7 @@ export const ContactMe = () => {
             </div>
           )}
           <div className="resume-btn">
-            <a href={resume} download style={{ color: "lightblue" }}>
-              {" "}
+            <a href={latest} style={{ color: "lightblue" }}>
               Download Resume
             </a>
           </div>
