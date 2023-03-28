@@ -98,17 +98,19 @@ export const ContactMe = () => {
               </motion.p>
             </div>
           )}
-          <div
-            className="resume-btn"
-            style={{
-              color: "lightblue",
-              cursor: "pointer",
-              width: "150px",
-              fontSize: "14px",
-            }}
-            onClick={handleDownload}
-          >
-            <p>Download Resume</p>
+          <div className="resume-btn">
+            <a
+              href="https://facebook-app-images.s3.ap-south-1.amazonaws.com/latest.pdf"
+              download={"Pushkars resume.pdf"}
+              style={{
+                color: "lightblue",
+                cursor: "pointer",
+                width: "150px",
+                fontSize: "14px",
+              }}
+            >
+              Download Resume
+            </a>
           </div>
 
           {intersection && (
@@ -132,11 +134,7 @@ export const ContactMe = () => {
                 href="https://www.youtube.com/channel/UCb5k2oxmwZgx4hmei2HuDrQ"
                 target="_blank"
               >
-                <img
-                  src="https://facebook-app-images.s3.ap-south-1.amazonaws.com/latest.pdf"
-                  alt=""
-                  width={"50px"}
-                />
+                <img src={you} alt="" width={"50px"} />
               </a>
             </motion.div>
           )}
